@@ -1,0 +1,70 @@
+.ui-PageComponent
+  div.container
+    div.left-menu
+      .menu-opener
+        img(src='img/menu.png')
+      a.menu-item(href='#')
+        span.fi.fi-logo
+        | Library
+      a.menu-item(href='#')
+        span.fi.fi-calendar
+        | Step 1 Schedule
+      a.menu-item(href='#')
+        span.fi.fi-builder
+        | Quiz Builder
+      a.menu-item(href='#')
+        span.fi.fi-group
+        | Team Workspace
+      .menu-bottom
+        a.menu-item(href='#')
+          span.fi.fi-logo
+          | Add Tools
+        a.menu-item(href='#')
+          span.fi.fi-logo
+          | Help
+    .right-content
+      .right-header
+        input#txtSearch.search(type='text', value='Search for videos, flashcards, and questions')
+        .top-menu
+          a.top-menu-item(href='#')
+            img(src='img/ico1.png')
+            span.menu-item-info 3
+          a.top-menu-item(href='#')
+            img(src='img/ico2.png')
+          a.top-menu-item(href='#')
+            img(src='img/ico3.png')
+            span.menu-item-info 5
+          a.top-menu-item.profile-img(href='#')
+            img(src='img/profileImage.png')
+    .category
+      img(src='img/robo.png')      
+      span.link-path(data-bind='text: categoryPath')
+    br
+      h2(data-bind='text: title')
+    .video-container
+      .right-video
+        video(controls)
+          source(data-bind='attr:{src: activeVideoURL}')
+        table.quiz-area(border='0', cellpadding='0', cellspacing='0')
+          tbody
+            tr
+              td.quiz-area-left
+                span(data-bind='text: flashCardsCount')
+                hr
+                span(data-bind='text: questionsCount')
+              td.quiz-area-right Add to Quiz Queue
+      .up-next
+        h2 Up Next
+        ul(data-bind="foreach: upNext")
+          li
+            img(data-bind='attr:{src: image}')
+            span(data-bind="text: title")
+            small(data-bind="text: source")
+           .timer(data-bind="text: length")
+      .play-list
+        h2 Memory Anchors
+        ul(data-bind="foreach: relatedVideos")
+          li
+            img(data-bind='attr:{src: image}')
+            span(data-bind="text: title")
+            small(data-bind="text: source")
