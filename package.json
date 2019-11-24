@@ -1,17 +1,18 @@
 {
-  "name": "starter_repo",
+  "name": "osmosis_dev_2",
   "version": "1.0.0",
   "description": "Starter repo for getting to know how the Osmosis codebase works",
-  "main": "index.js",
+  "main": "osmosis.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+	"start": "node osmosis.js"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/OsmosisKD/starter_repo.git"
   },
   "author": "",
-  "license": "",
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/OsmosisKD/starter_repo/issues"
   },
@@ -20,8 +21,12 @@
     "app-module-path": "^2.2.0",
     "debug-trace": "^2.2.1",
     "express": "^4.14.0",
-    "fibers": "^2.0.2",
+    "fibers": "^2.0.0",
     "jade": "~0.27.7",
     "morgan": "^1.9.0"
-  }
+  },
+  "engines": {
+    "node": "8.x"
+  },
+  "devDependencies": {}
 }
