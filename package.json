@@ -1,8 +1,8 @@
 {
   "name": "osmosis_dev_2",
   "version": "1.0.0",
-  "description": "Starter repo for getting to know how the Osmosis codebase works",
-  "main": "osmosis.js",
+  "description": "Starter repo for getting to know how the Osmosis codebase works !",
+  "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
 	"start": "node osmosis.js"
