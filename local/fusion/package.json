@@ -38,7 +38,7 @@
     "less": "^1.7.0",
     "mysql": "git://github.com/felixge/node-mysql",
     "node-static": "^0.7.3",
-    "nodemailer": "0.4.4",
+    "nodemailer": "6.4.16",
     "request": "^2.34.0",
     "shell-escape": "^0.2.0",
     "socket.io": "^0.9.16",
